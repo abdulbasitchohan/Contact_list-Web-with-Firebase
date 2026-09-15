@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Firebase Task</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header class="header">
+        <div class="badge">
+          <span></span>
+          CONTACT MANAGER
+        </div>
+
+        <h1>My Contacts</h1>
+        <p>Keep your important contacts organized in one place.</p>
+      </header>
+
+      <!-- Add Contact Form -->
+      <section class="form-card">
+        <div class="form-title">
+          <div class="form-icon">+</div>
+
+          <div>
+            <h2>Add New Contact</h2>
+            <p>Enter the contact details below</p>
+          </div>
+        </div>
+
+        <form class="form">
+          <div class="field">
+            <label>FULL NAME</label>
+
+            <div class="input-wrap">
+              <span class="input-icon">♙</span>
+              <input type="text" id="nameInp" placeholder="e.g. Ahmed Khan" />
+            </div>
+          </div>
+
+          <div class="field">
+            <label>EMAIL ADDRESS</label>
+
+            <div class="input-wrap">
+              <span class="input-icon">✉</span>
+              <input type="email" id="emailInp" placeholder="ahmed@example.com" />
+            </div>
+          </div>
+
+          <button id="addBtn" >+ Add Contact</button>
+        </form>
+      </section>
+
+      <!-- Contact List -->
+      <!-- <section>
+        <div class="contacts-header">
+          <h2>All Contacts</h2>
+          <span class="count">3 Contacts</span>
+        </div>
+
+        <div class="contact-card">
+          <div class="avatar">AK</div>
+
+          <div class="contact-info">
+            <h3>Ahmed Khan</h3>
+            <p>ahmed.khan@example.com</p>
+          </div>
+
+          <div class="actions">
+            <button class="action-btn edit" title="Edit">✎</button>
+            <button class="action-btn delete" title="Delete">⌫</button>
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <div class="avatar">SA</div>
+
+          <div class="contact-info">
+            <h3>Sara Ahmed</h3>
+            <p>sara.ahmed@example.com</p>
+          </div>
+
+          <div class="actions">
+            <button class="action-btn edit" title="Edit">✎</button>
+            <button class="action-btn delete" title="Delete">⌫</button>
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <div class="avatar">MH</div>
+
+          <div class="contact-info">
+            <h3>Muhammad Hassan</h3>
+            <p>hassan@example.com</p>
+          </div>
+
+          <div class="actions">
+            <button class="action-btn edit" title="Edit">✎</button>
+            <button class="action-btn delete" title="Delete">⌫</button>
+          </div>
+        </div>
+      </section> -->
+    </main>
+  </body>
+  
+  <script src="https://www.gstatic.com/firebasejs/12.16.0/firebase-app-compat.js"></script>
+  <!-- <script src="https://www.gstatic.com/firebasejs/12.16.0/firebase-auth-compat.js"></script> -->
+  <script src="https://www.gstatic.com/firebasejs/12.16.0/firebase-database-compat.js"></script>
+  <script>
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyDWs5fNr_WYnJQt8q817JVWhMqSfIo3RZI",
+      authDomain: "contact-list-8585c.firebaseapp.com",
+      databaseURL: "https://contact-list-8585c-default-rtdb.firebaseio.com",
+      projectId: "contact-list-8585c",
+      storageBucket: "contact-list-8585c.firebasestorage.app",
+      messagingSenderId: "635371002663",
+      appId: "1:635371002663:web:61f94a18b4c4ff6010a702",
+    };
+
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  <script src="./demo.js"></script>
+</html>
